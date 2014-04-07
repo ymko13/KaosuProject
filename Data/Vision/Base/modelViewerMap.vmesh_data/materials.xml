@@ -1,0 +1,5 @@
+<root>
+    <Materials>
+        <Material name="MetPlatteIndustrie" diffuse="metalFloor.dds" transparency="opaque" doublesided="FALSE" specmul="0.000000" specexp="0.000000" parallaxscale="-0.030000" parallaxbias="-0.015000" lightmapsize="512,512" lightmapID="1" />
+    </Materials>
+</root>

@@ -1,0 +1,8 @@
+<root>
+    <Resources Version="1" Count="4" PathType="Project">
+        <Resource Manager="Textures" Filename="alphaNoise256.dds" CustomInt="1,0" Size="262144" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vmDiffuse.ShaderLib" Size="43660" />
+        <Resource Manager="FILE" Filename="Models\Sphere.model_data\materials.xml" OwnerRes="3" Size="403" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models\Sphere.model" CustomInt="1,2" Size="96332" />
+    </Resources>
+</root>

@@ -1,0 +1,69 @@
+<root>
+    <header version="0" convertible="TRUE" />
+    <info generatedby="vGeom Version 7, 1, 5, 0" />
+    <shape class="StaticMeshShape">
+        <property name="ShapeName" value="modelViewerMap" />
+        <property name="UniqueID" value="1" />
+        <property name="ExportShape" value="TRUE" />
+        <property name="Visible" value="TRUE" />
+        <property name="Position" value="0.0000,0.0000,0.0000" />
+        <property name="Orientation" value="0.0000,0.0000,0.0000" />
+        <property name="Scaling" value="1.0000,1.0000,1.0000" />
+        <property name="MeshFileName" value="modelViewerMap.vmesh" />
+        <property name="VisibleBitmask" value="4294967295" />
+        <property name="LightInfluenceBitmask" value="65535" />
+        <property name="CollisionBitmask" value="65535" />
+        <property name="CastStaticShadows" value="TRUE" />
+        <property name="CastDynamicShadows" value="FALSE" />
+    </shape>
+    <shape class="DynLightShape">
+        <property name="ShapeName" value="StaticLight000" />
+        <property name="UniqueID" value="2" />
+        <property name="ExportShape" value="TRUE" />
+        <property name="Visible" value="TRUE" />
+        <property name="Position" value="-640.0000,640.0000,128.0000" />
+        <property name="Orientation" value="0.0000,0.0000,0.0000" />
+        <property name="Scaling" value="1.0000,1.0000,1.0000" />
+        <property name="ExportAsStatic" value="TRUE" />
+        <property name="PreviewAsDynamicLight" value="FALSE" />
+        <property name="TurnOffAfterLighting" value="TRUE" />
+        <property name="Radius" value="4400.000000" />
+        <property name="Multiplier" value="1.000000" />
+        <property name="LightType" />
+        <property name="LightColor" value="255,255,255,255" />
+        <property name="LightKey" value="Light1" />
+        <property name="WorldInfluenceMask" value="1" />
+        <property name="ObjectInfluenceMask" value="1" />
+        <property name="EnableCorona" value="FALSE" />
+        <property name="EnableLensFlares" value="FALSE" />
+        <property name="CastWorldShadows" value="TRUE" />
+        <property name="CastModelShadows" value="FALSE" />
+        <property name="AnimationTiming" value="2.000000" />
+        <property name="AnimationPhase" value="0.000000" />
+    </shape>
+    <shape class="DynLightShape">
+        <property name="ShapeName" value="StaticLight001" />
+        <property name="UniqueID" value="3" />
+        <property name="ExportShape" value="TRUE" />
+        <property name="Visible" value="TRUE" />
+        <property name="Position" value="640.0000,-640.0000,128.0000" />
+        <property name="Orientation" value="0.0000,0.0000,0.0000" />
+        <property name="Scaling" value="1.0000,1.0000,1.0000" />
+        <property name="ExportAsStatic" value="TRUE" />
+        <property name="PreviewAsDynamicLight" value="FALSE" />
+        <property name="TurnOffAfterLighting" value="TRUE" />
+        <property name="Radius" value="1800.000000" />
+        <property name="Multiplier" value="1.000000" />
+        <property name="LightType" />
+        <property name="LightColor" value="255,255,255,255" />
+        <property name="LightKey" value="Light2" />
+        <property name="WorldInfluenceMask" value="1" />
+        <property name="ObjectInfluenceMask" value="0" />
+        <property name="EnableCorona" value="FALSE" />
+        <property name="EnableLensFlares" value="FALSE" />
+        <property name="CastWorldShadows" value="TRUE" />
+        <property name="CastModelShadows" value="FALSE" />
+        <property name="AnimationTiming" value="2.000000" />
+        <property name="AnimationPhase" value="0.000000" />
+    </shape>
+</root>

@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="blinn1" diffuse="MissingModel.dds" transparency="opaque" doublesided="FALSE" specmul="0" specexp="0" parallaxscale="-0.03" parallaxbias="-0.015" ambient="0,0,0,255" lightmapsize="256,256" lightmapID="0" Lighting="Fullbright" depthwrite="TRUE" zbias="0,0,0" sortingkey="0" alphathreshold="-1" lightmapgran="0" pass="AUTO" />
+    </Materials>
+</root>

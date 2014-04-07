@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="fenc02" diffuse="blubber.dds" Lighting="None" transparency="opaque" doublesided="FALSE" depthwrite="TRUE" zbias="0.0000,0.0000,0.0000" specmul="0.000000" specexp="0.000000" parallaxscale="-0.030000" parallaxbias="-0.015000" ambient="0,0,0,0" sortingkey="0" alphathreshold="-1.000000" lightmapsize="128,128" lightmapgran="0.000000" lightmapID="-1" />
+    </Materials>
+</root>

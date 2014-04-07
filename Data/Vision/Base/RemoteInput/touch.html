@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>Vision - Remote Touch</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		
+		<style type="text/css">
+			body { margin: 0px; overflow: hidden; height:100%; background: url("static/Background.png"); }
+			.crosshair { background: url("static/Thumb.png"); z-index: 254; width: 64px; height: 64px; }
+			.touch { 
+				display:block;
+				width:100%;
+				height:100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index:255;
+			}
+			.logo {
+				display:block;
+				width:100%;
+				height:100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index:0;
+				background: url("static/Havok_Logo_256x128.png");
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+		</style>
+		<script type="text/javascript">
+var activeTouches = new Array();
+var touchesToSend = new Array();
+var crosshairSize = 64;
+var updateCallback;
+var deviceName = "unknown";
+var variables = new Array();
+var needWindowSize = false;
+
+function cropFloat(value)
+{
+  return Math.round(value*1000.0) / 1000.0;
+}
+
+function update()
+{
+	// Window size requested? If yes, send it.
+	if (needWindowSize)
+	{
+		needWindowSize = false;
+		sendWindowSize();
+	}
+
+	var touchesToSendNew = new Array();
+
+	var data = "";
+	var first = true;
+	for(var id in touchesToSend){
+		if(first){
+			first = false;
+		}
+		else {
+			data += "|";
+		}
+		if(touchesToSend[id].type == 4){
+			data += touchesToSend[id].type + "," + cropFloat(touchesToSend[id].tiltLR) + "," + cropFloat(touchesToSend[id].tiltFB) + "," + cropFloat(touchesToSend[id].dir);
+		}
+		else if(touchesToSend[id].type == 5){
+			data += touchesToSend[id].type + "," + cropFloat(touchesToSend[id].x) + "," + cropFloat(touchesToSend[id].y) + "," + cropFloat(touchesToSend[id].z);
+		}
+		else {
+			data += touchesToSend[id].type + "," + id + "," + touchesToSend[id].posX + "," + touchesToSend[id].posY;
+		}
+		
+		// To avoid stuck touches due to network reordering (eg. end arrives before start), we simply always resend all end events
+		if(touchesToSend[id].type == 3)
+			touchesToSendNew[id] = touchesToSend[id];
+	}
+	
+	touchesToSend = touchesToSendNew;
+	
+	
+	if(data != ""){
+		var request = new XMLHttpRequest();
+		request.open("POST","/event",true);
+		request.send(data);
+	}
+}
+
+function OnTouchMove(event)
+{
+	var i;
+	
+	event.preventDefault();
+	var touches = event.changedTouches;
+	for(i=0;i<touches.length;i++){
+		var touch = touches[i];
+		//output.value = "touch " + touch.identifier + " " + (touch.pageX/window.innerWidth) + " " + (touch.pageY/window.innerHeight) + "\n" + output.value;
+		var cross = activeTouches[touch.identifier];
+		cross.style.left = (touch.pageX - (crosshairSize/2)) + "px";
+		cross.style.top = (touch.pageY - (crosshairSize/2)) + "px";
+		
+		if(touchesToSend[touch.identifier]){
+			touchesToSend[touch.identifier].posX = touch.pageX;
+			touchesToSend[touch.identifier].posY = touch.pageY;
+		}
+		else {
+			touchesToSend[touch.identifier] = {type: 1, posX: touch.pageX, posY: touch.pageY} 
+		}
+	}
+	
+	if(event.touches){
+		var touches = event.touches;
+		for(var active in activeTouches)
+		{
+			var found = false;
+			for(var i=0; i<touches.length;i++){
+				if(touches[i].identifier == active){
+					found = true;
+					break;
+				}
+			}
+			if(found == false)
+			{
+				var cross = activeTouches[active];
+				document.body.removeChild(cross);
+				delete activeTouches[active];	
+				
+				if(touchesToSend[active]){
+					touchesToSend[active].type = 3;
+				}
+				else {
+					touchesToSend[active] = {type: 3, posX: -1, posY: -1} 
+				}
+					
+			}
+		}
+	}
+}
+
+function OnTouchStart(event)
+{
+	event.preventDefault();
+	var touches = event.changedTouches;
+	for(i=0;i<touches.length;i++){
+		var touch = touches[i];
+		//output.value = "touchstart " + touch.identifier + " " + (touch.pageX/window.innerWidth) + " " + (touch.pageY/window.innerHeight) + "\n" + output.value;
+		var cross = document.createElement("div");
+		cross.className = "crosshair";
+		cross.style.position = "absolute";
+		cross.style.left = (touch.pageX - (crosshairSize/2)) + "px";
+		cross.style.top = (touch.pageY - (crosshairSize/2)) + "px";
+		document.body.appendChild(cross);
+		activeTouches[touch.identifier] = cross;
+		
+		touchesToSend[touch.identifier] = {type: 2, posX: touch.pageX, posY: touch.pageY} 
+	}
+}
+
+function OnTouchEnd(event)
+{		
+	var touches = event.changedTouches;
+	for(i=0;i<touches.length;i++){
+		var touch = touches[i];
+		//output.value = "touchend " + touch.identifier + "\n" + output.value;
+		var cross = activeTouches[touch.identifier];
+		document.body.removeChild(cross);
+		delete activeTouches[touch.identifier];
+		
+		if(touchesToSend[touch.identifier]){
+			touchesToSend[touch.identifier].type = 3;
+			touchesToSend[touch.identifier].posX = 0;
+			touchesToSend[touch.identifier].posY = 0;
+		}
+		else {
+			touchesToSend[touch.identifier] = {type: 3, posX: 0, posY: 0} 
+		}
+	}
+}
+
+function OnDeviceOrientation(event)
+{
+	event.preventDefault();
+	
+	touchesToSend["orientation"] = { type: 4, tiltLR: (event.gamma), tiltFB: (event.beta), dir: (event.alpha) }
+}
+
+function OnDeviceMotion(event)
+{
+	event.preventDefault();
+	
+	switch (window.orientation)
+	{
+		case 0:
+			touchesToSend["acceleration"] = { type: 5, x: (accelerationMultiplier * event.accelerationIncludingGravity.x), y: (accelerationMultiplier * event.accelerationIncludingGravity.y), z: (accelerationMultiplier * event.accelerationIncludingGravity.z) }
+			break;
+		case 90: 
+			touchesToSend["acceleration"] = { type: 5, x: (-accelerationMultiplier * event.accelerationIncludingGravity.y), y: (accelerationMultiplier * event.accelerationIncludingGravity.x), z: (accelerationMultiplier * event.accelerationIncludingGravity.z) }
+			break;
+		case -90:
+		case 270:	// this shouldn't be necessary as the devices we've tested actually return -90, but better be safe than sorry...
+			touchesToSend["acceleration"] = { type: 5, x: (accelerationMultiplier * event.accelerationIncludingGravity.y), y: (-accelerationMultiplier * event.accelerationIncludingGravity.x), z: (accelerationMultiplier * event.accelerationIncludingGravity.z) }
+			break;
+		case 180:
+			touchesToSend["acceleration"] = { type: 5, x: (-accelerationMultiplier * event.accelerationIncludingGravity.x), y: (-accelerationMultiplier * event.accelerationIncludingGravity.y), z: (accelerationMultiplier * event.accelerationIncludingGravity.z) }
+			break;
+		default:
+			touchesToSend["acceleration"] = { type: 5, x: (accelerationMultiplier * event.accelerationIncludingGravity.x), y: (accelerationMultiplier * event.accelerationIncludingGravity.y), z: (accelerationMultiplier * event.accelerationIncludingGravity.z) }
+			break;
+	}
+}
+
+function sendWindowSize() {
+	var request = new XMLHttpRequest();
+	request.open("POST","/init",true);
+	request.send(window.innerWidth + "," + window.innerHeight);
+}
+
+function init(){
+	var eventRate = 50;
+	var updateRate = 100;
+	accelerationMultiplier = 1;
+
+	if(navigator.appVersion.indexOf("iPad") != -1)
+	{
+		deviceName = "iPad";
+	}
+	else if((navigator.appVersion.indexOf("Android") != -1) || (navigator.appVersion.indexOf("Linux") != -1))
+	{
+		deviceName = "Android";
+		accelerationMultiplier = -1;
+	}
+	else if(navigator.appVersion.indexOf("iPhone") != -1)
+	{
+		deviceName = "iPhone";
+	}
+	else if(navigator.appVersion.indexOf("iPod") != -1)
+	{
+		deviceName = "iPod";
+	}
+	
+	if(deviceName == "iPod" || deviceName == "iPhone")
+	{
+		eventRate = 100;
+		updateRate = 300;
+	}
+	//alert(navigator.appVersion);
+	
+	
+
+	var touchArea = document.getElementById("touchArea");
+	var output = document.getElementById("output");
+	updateCallback = setInterval(update, eventRate);
+	variableCallback = setInterval(function()
+	{
+		var request = new XMLHttpRequest();
+		request.open("GET","/update",true);
+		request.onreadystatechange = function(){
+			if(request.readyState == 4){
+				if(onVariableUpdate && request.responseText) {
+					eval(request.responseText);
+					onVariableUpdate();
+				}
+			}
+		}
+		request.send(null);
+	}, updateRate);
+	
+	//touchArea.style.width = window.innerWidth + "px";
+	//touchArea.style.height = window.innerHeight + "px";
+	//document.body.style.width = window.innerWidth + "px";
+	//document.body.style.height = window.innerHeight + "px";
+	//alert("size " + window.innerWidth + " " + window.innerHeight);
+	//window.scrollTo(0, 0);
+	
+	// Resend the window size on resizing, but "debounce" to avoid sending multiple times during a resize animation
+	var resizeTimeout = null;
+	window.onresize = function() {
+		if(resizeTimeout != null)
+			clearTimeout(resizeTimeout);
+		resizeTimeout = setTimeout(sendWindowSize, 500);
+	}
+	
+	// Fire resize event to send the window size on startup
+	window.onresize();
+	
+	touchArea.addEventListener("touchend",OnTouchEnd);
+
+	touchArea.addEventListener("touchcancel",OnTouchEnd);
+	
+	touchArea.addEventListener("touchmove",OnTouchMove);
+	
+	touchArea.addEventListener("touchstart",OnTouchStart);
+	
+	if (window.DeviceOrientationEvent) {
+		window.addEventListener('deviceorientation',OnDeviceOrientation, false);
+	}
+	else {
+		alert("The HTML5 api for device orientation is not supported by your browser. Please update your browser.");
+	}
+	
+	if (window.DeviceMotionEvent) {
+		window.addEventListener('devicemotion', OnDeviceMotion);
+	}
+	else {
+		alert("The HTML5 api for device acceleration is not supported by your browser. Please update your browser.");
+	}
+}
+		</script>
+	</head>
+	<body onload="init()"> 
+		<div id="touchArea" class="touch">&nbsp;</div>
+		<div class="logo">&nbsp;</div>
+		<!-- USER GUI HTML -->
+		<!--<textarea cols="70" rows="10" id="output"></textarea>-->
+	</body>
+</html>

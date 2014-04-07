@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="01 - Default" diffuse="..\alphaNoise256.dds" transparency="opaque" doublesided="FALSE" specmul="0" specexp="2" parallaxscale="-0" parallaxbias="-0" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" Lighting="LightGrid" depthwrite="TRUE" zbias="0,0,0" ambient="0,0,0,255" sortingkey="0" alphathreshold="-1" />
+    </Materials>
+</root>

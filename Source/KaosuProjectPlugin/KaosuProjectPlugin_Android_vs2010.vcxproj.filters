@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="KaosuProjectPluginPCH.cpp" />
+    <ClCompile Include="myComponent.cpp" />
+    <ClCompile Include="PluginMain.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="TemplateAction.cpp" />
+    <ClCompile Include="BurnMe.cpp" />
+    <ClCompile Include="FearMe.cpp" />
+    <ClCompile Include="FreezeMe.cpp" />
+    <ClCompile Include="kAiPath.cpp" />
+    <ClCompile Include="kBaseComponent.cpp" />
+    <ClCompile Include="kBasicEntity.cpp" />
+    <ClCompile Include="kCell.cpp" />
+    <ClCompile Include="kCharacter.cpp" />
+    <ClCompile Include="kCharStats.cpp" />
+    <ClCompile Include="kController.cpp" />
+    <ClCompile Include="kDamageableEntity.cpp" />
+    <ClCompile Include="kEffect.cpp" />
+    <ClCompile Include="kMap.cpp" />
+    <ClCompile Include="kPath.cpp" />
+    <ClCompile Include="kRoom.cpp" />
+    <ClCompile Include="kSerializer.cpp" />
+    <ClCompile Include="kStatObject.cpp" />
+    <ClCompile Include="PoisonMe.cpp" />
+    <ClCompile Include="StunMe.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KaosuProjectPluginModule.h" />
+    <ClInclude Include="KaosuProjectPluginPCH.h" />
+    <ClInclude Include="myComponent.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="TemplateAction.h" />
+    <ClInclude Include="BurnMe.h" />
+    <ClInclude Include="FearMe.h" />
+    <ClInclude Include="FreezeMe.h" />
+    <ClInclude Include="kAiPath.h" />
+    <ClInclude Include="kBaseComponent.h" />
+    <ClInclude Include="kBasicEntity.h" />
+    <ClInclude Include="kCell.h" />
+    <ClInclude Include="kCharacter.h" />
+    <ClInclude Include="kCharStats.h" />
+    <ClInclude Include="kController.h" />
+    <ClInclude Include="kDamageableEntity.h" />
+    <ClInclude Include="kEffect.h" />
+    <ClInclude Include="kMap.h" />
+    <ClInclude Include="kPath.h" />
+    <ClInclude Include="kRoom.h" />
+    <ClInclude Include="kSerializer.h" />
+    <ClInclude Include="kStatObject.h" />
+    <ClInclude Include="PoisonMe.h" />
+    <ClInclude Include="StunMe.h" />
+  </ItemGroup>
+</Project>

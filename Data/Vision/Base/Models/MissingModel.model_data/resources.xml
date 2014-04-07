@@ -1,0 +1,8 @@
+<root>
+    <Resources Version="1" Count="5" PathType="Project">
+        <Resource Manager="Textures" Filename="Models\MissingModel.dds" CustomInt="1,64" Size="10936" />
+        <Resource Manager="FILE" Filename="Models\MissingModel.model_data\materials.xml" OwnerRes="3" Size="565" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models\MissingModel.model" CustomInt="1,2" Size="64" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vMaterial.ShaderLib" Size="380864" />
+    </Resources>
+</root>

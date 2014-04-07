@@ -1,0 +1,10 @@
+<root>
+  <LOADRESOURCE type="FONT" filename="\Fonts\CourierNew_18.fnt" name="DefaultSmall" />
+  <LOADRESOURCE type="FONT" filename="\Fonts\Arial_22.fnt" name="Menu" />
+  <LOADRESOURCE type="DIALOG" filename="ProfilingMenu.xml"/>
+  <LOADRESOURCE type="DIALOG" filename="MobileExitDialog.xml"/>
+
+  <defaults
+		font="DefaultSmall"
+  />
+</root>

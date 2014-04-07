@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="KaosuProjectPluginModule.h" />
+    <ClInclude Include="KaosuProjectPluginPCH.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="kSerializer.h">
+      <Filter>Z_BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="kBasicEntity.h">
+      <Filter>Z_BaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="kCell.h">
+      <Filter>Z_MapGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="kStatObject.h">
+      <Filter>Z_MapGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="kPath.h">
+      <Filter>Z_MapGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="kRoom.h">
+      <Filter>Z_MapGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplateAction.h">
+      <Filter>Z_Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="kMap.h">
+      <Filter>Z_MapGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="kCharStats.h">
+      <Filter>Z_Character</Filter>
+    </ClInclude>
+    <ClInclude Include="kEffect.h">
+      <Filter>Z_Character</Filter>
+    </ClInclude>
+    <ClInclude Include="myComponent.h">
+      <Filter>Z_Components</Filter>
+    </ClInclude>
+    <ClInclude Include="kDamageableEntity.h">
+      <Filter>Z_Character</Filter>
+    </ClInclude>
+    <ClInclude Include="kCharacter.h">
+      <Filter>Z_Character</Filter>
+    </ClInclude>
+    <ClInclude Include="kBaseComponent.h">
+      <Filter>Z_Components</Filter>
+    </ClInclude>
+    <ClInclude Include="kAiPath.h">
+      <Filter>Z_Character</Filter>
+    </ClInclude>
+    <ClInclude Include="kController.h">
+      <Filter>Z_Components</Filter>
+    </ClInclude>
+    <ClInclude Include="FearMe.h">
+      <Filter>Z_Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="BurnMe.h">
+      <Filter>Z_Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="FreezeMe.h">
+      <Filter>Z_Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="StunMe.h">
+      <Filter>Z_Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="PoisonMe.h">
+      <Filter>Z_Actions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KaosuProjectPluginPCH.cpp" />
+    <ClCompile Include="PluginMain.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="kSerializer.cpp">
+      <Filter>Z_BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="kBasicEntity.cpp">
+      <Filter>Z_BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="kCell.cpp">
+      <Filter>Z_MapGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="kStatObject.cpp">
+      <Filter>Z_MapGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="kPath.cpp">
+      <Filter>Z_MapGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="kRoom.cpp">
+      <Filter>Z_MapGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateAction.cpp">
+      <Filter>Z_Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="kMap.cpp">
+      <Filter>Z_MapGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="kCharStats.cpp">
+      <Filter>Z_Character</Filter>
+    </ClCompile>
+    <ClCompile Include="kEffect.cpp">
+      <Filter>Z_Character</Filter>
+    </ClCompile>
+    <ClCompile Include="myComponent.cpp">
+      <Filter>Z_Components</Filter>
+    </ClCompile>
+    <ClCompile Include="kDamageableEntity.cpp">
+      <Filter>Z_Character</Filter>
+    </ClCompile>
+    <ClCompile Include="kCharacter.cpp">
+      <Filter>Z_Character</Filter>
+    </ClCompile>
+    <ClCompile Include="kBaseComponent.cpp">
+      <Filter>Z_Components</Filter>
+    </ClCompile>
+    <ClCompile Include="kAiPath.cpp">
+      <Filter>Z_Character</Filter>
+    </ClCompile>
+    <ClCompile Include="kController.cpp">
+      <Filter>Z_Components</Filter>
+    </ClCompile>
+    <ClCompile Include="FearMe.cpp">
+      <Filter>Z_Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="BurnMe.cpp">
+      <Filter>Z_Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="FreezeMe.cpp">
+      <Filter>Z_Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="StunMe.cpp">
+      <Filter>Z_Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="PoisonMe.cpp">
+      <Filter>Z_Actions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Z_MapGeneration">
+      <UniqueIdentifier>{4b078d10-2b5f-40bd-968b-413b4df8a1fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Z_BaseClasses">
+      <UniqueIdentifier>{860c12df-4425-4ac5-8dd4-47f0685e9ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Z_Actions">
+      <UniqueIdentifier>{4b7b4d35-ab22-47df-b88a-41f6d7859afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Z_Character">
+      <UniqueIdentifier>{d7e33a27-6e0f-4d81-8d31-9c5e6a40ad7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Z_Components">
+      <UniqueIdentifier>{bff4a12e-4d06-40b7-a0ee-69e747174d1c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

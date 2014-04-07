@@ -1,0 +1,2465 @@
+FILEVERSION = 2.4.0.0;
+PLATFORM = DX9;
+
+RENDER_STATE RSC_0 {
+  rasterizerstylefromsurface = true;
+  trackingmask = 1024;
+
+  //------ Blend State Group ------
+  alphatestenabled = true;
+  alphatestref = 64;
+  alphatestfunc = greater;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_1 {
+  rasterizerstylefromsurface = true;
+  trackingmask = 1024;
+
+  //------ Blend State Group ------
+  alphatestenabled = true;
+  alphatestref = 64;
+  alphatestfunc = greater;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_2 {
+  trackingmask = 512;
+  compiledClass = "VShadowMapFillShaderPass";
+
+  //------ Blend State Group ------
+  alphatestref = 63;
+  alphatestfunc = greater;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+  rst_flags = 0;
+  cullmode = front;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_3 {
+  trackingmask = 1024;
+  compiledClass = "VShadowMapFillShaderPass";
+
+  //------ Blend State Group ------
+  alphatestref = 63;
+  alphatestfunc = greater;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+  rst_flags = 0;
+  cullmode = front;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_4 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_5 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 4;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_6 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 4;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_7 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 1025;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_8 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 1025;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_9 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_10 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 1024;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+  rst_flags = 1;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_11 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 1028;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_12 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 1028;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_13 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 1025;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_14 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 1025;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_15 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 1024;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_16 {
+  rasterizerstylefromsurface = true;
+  trackingmask = 1024;
+
+  //------ Blend State Group ------
+  alphatestenabled = true;
+  alphatestref = 64;
+  alphatestfunc = greater;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_17 {
+  rasterizerstylefromsurface = true;
+  trackingmask = 1024;
+
+  //------ Blend State Group ------
+  alphatestenabled = true;
+  alphatestref = 64;
+  alphatestfunc = greater;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_18 {
+  trackingmask = 512;
+  compiledClass = "VShadowMapFillShaderPass";
+
+  //------ Blend State Group ------
+  alphatestref = 63;
+  alphatestfunc = greater;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+  rst_flags = 0;
+  cullmode = front;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_19 {
+  trackingmask = 1024;
+  compiledClass = "VShadowMapFillShaderPass";
+
+  //------ Blend State Group ------
+  alphatestref = 63;
+  alphatestfunc = greater;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+  rst_flags = 0;
+  cullmode = front;
+
+  //------ Tesselation State Group ------
+}
+
+SHADER DepthRender {
+  RenderStateContainerID = 0;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 19;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define DEPTH_RENDERER
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define DEPTH_RENDERER
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER DepthRender_Wind {
+  RenderStateContainerID = 1;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 19;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define DEPTH_RENDERER
+#define USE_WIND
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define DEPTH_RENDERER
+#define USE_WIND
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER FillAlphatestDepth {
+  RenderStateContainerID = 2;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 17;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = min_mag_mip_linear;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define ALPHA_TEST
+
+#include <Shaders/ShadowMapFillVS.inc>
+  }$SOURCECODETAG
+
+  vs_function = "main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define ALPHA_TEST
+
+#include <Shaders/ShadowMapFillPS.inc>
+  }$SOURCECODETAG
+
+  ps_function = "main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER FillAlphatestDepth_Wind {
+  RenderStateContainerID = 3;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 19;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = min_mag_mip_linear;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define DEPTH_RENDERER
+#define USE_WIND
+#define DEPTH_BIAS
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define ALPHA_TEST
+#define USE_WIND
+
+#include <Shaders/ShadowMapFillPS.inc>
+  }$SOURCECODETAG
+
+  ps_function = "main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Instancing_Fullbright {
+  RenderStateContainerID = 4;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 3611;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 2;
+  SAMPLER_PS 0 = {
+    samplername = "BaseTexture";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  SAMPLER_PS 1 = {
+    samplername = "Lightmap";
+    texturetype = lightmap;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = clamp,clamp,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_INSTANCING
+#define USE_FOG
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_INSTANCING
+#define USE_FOG
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Instancing_LG {
+  RenderStateContainerID = 5;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 3611;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 2;
+  SAMPLER_PS 0 = {
+    samplername = "BaseTexture";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  SAMPLER_PS 1 = {
+    samplername = "Lightmap";
+    texturetype = lightmap;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = clamp,clamp,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_INSTANCING
+#define USE_FOG
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_INSTANCING
+#define USE_FOG
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Instancing_LG_Wind {
+  RenderStateContainerID = 6;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 3611;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_INSTANCING
+#define USE_FOG
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_INSTANCING
+#define USE_FOG
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Instancing_LG_Wind_Nrm {
+  RenderStateContainerID = 7;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 3675;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 3;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  SAMPLER_PS 1 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  SAMPLER_PS 2 = {
+    samplername = "";
+    texturetype = normalmap;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_FOG
+#define VMATERIAL_NORMALMAP
+#define USE_INSTANCING
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_FOG
+#define VMATERIAL_NORMALMAP
+#define USE_INSTANCING
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Instancing_LG_Wind_NrmSpec {
+  RenderStateContainerID = 8;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 3675;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 4;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  SAMPLER_PS 1 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  SAMPLER_PS 2 = {
+    samplername = "";
+    texturetype = normalmap;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  SAMPLER_PS 3 = {
+    samplername = "";
+    texturetype = reflectivity_map;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_FOG
+#define VMATERIAL_NORMALMAP
+#define VMATERIAL_SPECULAR
+#define VMATERIAL_REFMAP
+#define USE_INSTANCING
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_FOG
+#define VMATERIAL_NORMALMAP
+#define VMATERIAL_SPECULAR
+#define VMATERIAL_REFMAP
+#define USE_INSTANCING
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Instancing_LM_Wind {
+  RenderStateContainerID = 9;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 3611;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 2;
+  SAMPLER_PS 0 = {
+    samplername = "BaseTexture";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  SAMPLER_PS 1 = {
+    samplername = "Lightmap";
+    texturetype = lightmap;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = clamp,clamp,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTMAP
+#define USE_WIND
+#define USE_INSTANCING
+#define USE_FOG
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTMAP
+#define USE_WIND
+#define USE_INSTANCING
+#define USE_FOG
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Vegetation_Fullbright {
+  RenderStateContainerID = 10;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 19;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_FOG
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_FOG
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Vegetation_LG {
+  RenderStateContainerID = 11;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 19;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_FOG
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_FOG
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Vegetation_LG_Wind {
+  RenderStateContainerID = 12;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 19;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_FOG
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_FOG
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Vegetation_LG_Wind_Nrm {
+  RenderStateContainerID = 13;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 83;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 3;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  SAMPLER_PS 1 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  SAMPLER_PS 2 = {
+    samplername = "";
+    texturetype = normalmap;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_FOG
+#define VMATERIAL_NORMALMAP
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_FOG
+#define VMATERIAL_NORMALMAP
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Vegetation_LG_Wind_NrmSpec {
+  RenderStateContainerID = 14;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 83;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 4;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  SAMPLER_PS 1 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  SAMPLER_PS 2 = {
+    samplername = "";
+    texturetype = normalmap;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  SAMPLER_PS 3 = {
+    samplername = "";
+    texturetype = reflectivity_map;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_FOG
+#define VMATERIAL_NORMALMAP
+#define VMATERIAL_SPECULAR
+#define VMATERIAL_REFMAP
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTGRID
+#define USE_WIND
+#define USE_FOG
+#define VMATERIAL_NORMALMAP
+#define VMATERIAL_SPECULAR
+#define VMATERIAL_REFMAP
+#define CLAMP_LIGHTING // backwards compatibility
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Vegetation_LM_Wind {
+  RenderStateContainerID = 15;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 19;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 2;
+  SAMPLER_PS 0 = {
+    samplername = "BaseTexture";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  SAMPLER_PS 1 = {
+    samplername = "Lightmap";
+    texturetype = lightmap;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = clamp,clamp,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTMAP
+#define USE_WIND
+#define USE_FOG
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_LIGHTMAP
+#define USE_WIND
+#define USE_FOG
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Instancing_DepthRender {
+  RenderStateContainerID = 16;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 3611;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_INSTANCING
+#define DEPTH_RENDERER
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_INSTANCING
+#define DEPTH_RENDERER
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Instancing_DepthRender_Wind {
+  RenderStateContainerID = 17;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 3611;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_INSTANCING
+#define DEPTH_RENDERER
+#define USE_WIND
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define USE_INSTANCING
+#define DEPTH_RENDERER
+#define USE_WIND
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Instancing_FillAlphatestDepth {
+  RenderStateContainerID = 18;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 3611;
+  RecompilationRequiredOnPlatforms = -616;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = min_mag_mip_linear;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_INSTANCING
+#define DEPTH_RENDERER
+#define DEPTH_BIAS
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define ALPHA_TEST
+
+#include <Shaders/ShadowMapFillPS.inc>
+  }$SOURCECODETAG
+
+  ps_function = "main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Instancing_FillAlphatestDepth_Wind {
+  RenderStateContainerID = 19;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 3611;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 615;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = min_mag_mip_linear;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#define USE_INSTANCING
+#define DEPTH_RENDERER
+#define USE_WIND
+#define DEPTH_BIAS
+
+#include "TerrainVegetation.inc"
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#define ALPHA_TEST
+#define USE_WIND
+
+#include <Shaders/ShadowMapFillPS.inc>
+  }$SOURCECODETAG
+
+  ps_function = "main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+EFFECT VegetationFullbright {
+  DESCRIPTION = {};
+  TECHNIQUE "all"
+  {
+    inclusionTags="ALPHATEST";
+    passes="Vegetation_Fullbright";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "Instancing"
+  {
+    inclusionTags="ALPHATEST;INSTANCING";
+    passes="Instancing_Fullbright";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL";
+    passes="DepthRender";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depthShadow"
+  {
+    inclusionTags="SPECIFICSHADOWMAPFILL";
+    passes="FillAlphatestDepth";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL;INSTANCING";
+    passes="Instancing_DepthRender";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepthShadow"
+  {
+    inclusionTags="INSTANCING;SPECIFICSHADOWMAPFILL";
+    passes="Instancing_FillAlphatestDepth";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT Vegetation {
+  DESCRIPTION = {};
+  PARAMCOMMENT={"FadeParams","distances for fading out the alpha (x:near, y:far, z:1/(far-near))","500,800",float2,none,""};
+  TECHNIQUE "all"
+  {
+    inclusionTags="ALPHATEST";
+    passes="Vegetation_LG";
+    passtype = TransparentPass;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "Instancing"
+  {
+    inclusionTags="ALPHATEST;INSTANCING";
+    passes="Instancing_LG";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL";
+    passes="DepthRender";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depthShadow"
+  {
+    inclusionTags="SPECIFICSHADOWMAPFILL";
+    passes="FillAlphatestDepth";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL;INSTANCING";
+    passes="Instancing_DepthRender";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepthShadow"
+  {
+    inclusionTags="INSTANCING;SPECIFICSHADOWMAPFILL";
+    passes="Instancing_FillAlphatestDepth";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT Vegetation_Wind {
+  DESCRIPTION = {};
+  PARAMCOMMENT={"fBaseZ","height offset for wind pivot","0.0",float,none,""};
+  PARAMCOMMENT={"WindPhaseParams","Maps worldspace coordinates to wind offset value","0.0071,0.0092,0",float3,none,""};
+  TECHNIQUE "all"
+  {
+    inclusionTags="ALPHATEST";
+    passes="Vegetation_LG_Wind";
+    passtype = TransparentPass;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "Instancing"
+  {
+    inclusionTags="ALPHATEST;INSTANCING";
+    passes="Instancing_LG_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL";
+    passes="DepthRender_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depthShadow"
+  {
+    inclusionTags="SPECIFICSHADOWMAPFILL";
+    passes="FillAlphatestDepth_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL;INSTANCING";
+    passes="Instancing_DepthRender_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepthShadow"
+  {
+    inclusionTags="INSTANCING;SPECIFICSHADOWMAPFILL";
+    passes="Instancing_FillAlphatestDepth_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT VegetationLightmapWind {
+  DESCRIPTION = {};
+  PARAMCOMMENT={"fBaseZ","height offset for wind pivot","0.0",float,none,""};
+  PARAMCOMMENT={"WindPhaseParams","Maps world space position to wind offset parameter","0.0071,0.0092,0",float3,none,""};
+  TECHNIQUE "all"
+  {
+    inclusionTags="ALPHATEST";
+    passes="Vegetation_LM_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "Instancing"
+  {
+    inclusionTags="ALPHATEST;INSTANCING";
+    passes="Instancing_LM_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL";
+    passes="DepthRender_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depthShadow"
+  {
+    inclusionTags="SPECIFICSHADOWMAPFILL";
+    passes="FillAlphatestDepth_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL;INSTANCING";
+    passes="Instancing_DepthRender_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepthShadow"
+  {
+    inclusionTags="INSTANCING;SPECIFICSHADOWMAPFILL";
+    passes="Instancing_FillAlphatestDepth_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT VegetationNrml_Wind {
+  DESCRIPTION = {};
+  PARAMCOMMENT={"fBaseZ","height offset for wind pivot","0.0",float,none,""};
+  PARAMCOMMENT={"WindPhaseParams","Maps world space position to wind offset parameter","0.0071,0.0092,0",float3,none,""};
+  TECHNIQUE "all"
+  {
+    inclusionTags="ALPHATEST";
+    passes="Vegetation_LG_Wind_Nrm";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "Instancing"
+  {
+    inclusionTags="ALPHATEST;INSTANCING";
+    passes="Instancing_LG_Wind_Nrm";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL";
+    passes="DepthRender_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depthShadow"
+  {
+    inclusionTags="SPECIFICSHADOWMAPFILL";
+    passes="FillAlphatestDepth_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL;INSTANCING";
+    passes="Instancing_DepthRender_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepthShadow"
+  {
+    inclusionTags="INSTANCING;SPECIFICSHADOWMAPFILL";
+    passes="Instancing_FillAlphatestDepth_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT VegetationNrmlSpec_Wind {
+  DESCRIPTION = {};
+  PARAMCOMMENT={"fBaseZ","height offset for wind pivot","0.0",float,none,""};
+  PARAMCOMMENT={"WindPhaseParams","Maps world space position to wind offset parameter","0.0071,0.0092,0",float3,none,""};
+  PARAMCOMMENT={"MaterialParams","Material properties (x:spec mult, y:spec exp, z: parallax scale, w: parallax bias)","1,32,0,0",float4,none,""};
+  TECHNIQUE "all"
+  {
+    inclusionTags="ALPHATEST";
+    passes="Vegetation_LG_Wind_NrmSpec";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "Instancing"
+  {
+    inclusionTags="ALPHATEST;INSTANCING";
+    passes="Instancing_LG_Wind_NrmSpec";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL";
+    passes="DepthRender_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "depthShadow"
+  {
+    inclusionTags="SPECIFICSHADOWMAPFILL";
+    passes="FillAlphatestDepth_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepth"
+  {
+    inclusionTags="ALPHATEST;DEPTHFILL;INSTANCING";
+    passes="Instancing_DepthRender_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "InstancingDepthShadow"
+  {
+    inclusionTags="INSTANCING;SPECIFICSHADOWMAPFILL";
+    passes="Instancing_FillAlphatestDepth_Wind";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+

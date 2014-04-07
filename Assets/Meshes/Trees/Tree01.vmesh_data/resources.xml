@@ -1,0 +1,9 @@
+<root>
+    <Resources Version="1" Count="5" PathType="Project">
+        <Resource Manager="FILE" Filename="Meshes/Trees/Tree01.vmesh_data\materials.xml" OwnerRes="4" Size="900" />
+        <Resource Manager="Textures" Filename="Meshes\Trees\Textures\Pine_BOT.png" CustomInt="1,64" Size="1398100" />
+        <Resource Manager="Textures" Filename="Meshes\Trees\Textures\Pine_TOP.png" CustomInt="1,64" Size="349524" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3540544" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Meshes/Trees/Tree01.vmesh" CustomInt="1,1" Size="112" />
+    </Resources>
+</root>

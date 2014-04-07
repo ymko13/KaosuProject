@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev DLL|Win32">
+      <Configuration>Dev DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BurnMe.h" />
+    <ClInclude Include="FearMe.h" />
+    <ClInclude Include="FreezeMe.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="kAiPath.h" />
+    <ClInclude Include="KaosuProjectPluginModule.h" />
+    <ClInclude Include="KaosuProjectPluginPCH.h" />
+    <ClInclude Include="kBaseComponent.h" />
+    <ClInclude Include="kController.h" />
+    <ClInclude Include="kBasicEntity.h" />
+    <ClInclude Include="kCell.h" />
+    <ClInclude Include="kCharacter.h" />
+    <ClInclude Include="kCharStats.h" />
+    <ClInclude Include="kDamageableEntity.h" />
+    <ClInclude Include="kEffect.h" />
+    <ClInclude Include="kMap.h" />
+    <ClInclude Include="kPath.h" />
+    <ClInclude Include="kRoom.h" />
+    <ClInclude Include="kSerializer.h" />
+    <ClInclude Include="kStatObject.h" />
+    <ClInclude Include="myComponent.h" />
+    <ClInclude Include="PoisonMe.h" />
+    <ClInclude Include="StunMe.h" />
+    <ClInclude Include="TemplateAction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BurnMe.cpp" />
+    <ClCompile Include="FearMe.cpp" />
+    <ClCompile Include="FreezeMe.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="kAiPath.cpp" />
+    <ClCompile Include="KaosuProjectPluginPCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dev DLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="kBaseComponent.cpp" />
+    <ClCompile Include="kController.cpp" />
+    <ClCompile Include="kBasicEntity.cpp" />
+    <ClCompile Include="kCell.cpp" />
+    <ClCompile Include="kCharacter.cpp" />
+    <ClCompile Include="kCharStats.cpp" />
+    <ClCompile Include="kDamageableEntity.cpp" />
+    <ClCompile Include="kEffect.cpp" />
+    <ClCompile Include="kMap.cpp" />
+    <ClCompile Include="kPath.cpp" />
+    <ClCompile Include="kRoom.cpp" />
+    <ClCompile Include="kSerializer.cpp" />
+    <ClCompile Include="kStatObject.cpp" />
+    <ClCompile Include="myComponent.cpp" />
+    <ClCompile Include="PluginMain.cpp" />
+    <ClCompile Include="PoisonMe.cpp" />
+    <ClCompile Include="StunMe.cpp" />
+    <ClCompile Include="TemplateAction.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{789E94DE-ED72-4C0F-A6BB-65BE92BCA08C}</ProjectGuid>
+    <RootNamespace>KaosuProjectPlugin100</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>KaosuProjectPlugin</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePluginDX9_win32_vs2010_anarchyDebugDLL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dev DLL|Win32'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePluginDX9_win32_vs2010_anarchyDevDLL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePluginDX9_win32_vs2010_anarchyReleaseDLL.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">..\..\Bin\win32_vs2010_anarchy\debug_dll\DX9\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev DLL|Win32'">..\..\Bin\win32_vs2010_anarchy\dev_dll\DX9\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">..\..\Bin\win32_vs2010_anarchy\release_dll\DX9</OutDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Dev DLL|Win32'">.vPlugin</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">.vPluginD</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">.vPlugin</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">KaosuProjectPlugin</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">KaosuProjectPlugin</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev DLL|Win32'">KaosuProjectPlugin</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">..\..\Obj\win32_vs2010_anarchy\release_dll\DX9\KaosuProjectPlugin\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">..\..\Obj\win32_vs2010_anarchy\debug_dll\DX9\KaosuProjectPlugin\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev DLL|Win32'">..\..\Obj\win32_vs2010_anarchy\dev_dll\DX9\KaosuProjectPlugin\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP  %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>TESTCOMPONENT_EXPORTS;SAMPLEPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>KaosuProjectPluginPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)KaosuProjectPluginPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_USRDLL;TESTCOMPONENT_EXPORTS;SAMPLEPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>"$(VISION_SDK)\shared\include\vBase";"$(VISION_SDK)\shared\include\Engine";"$(VISION_SDK)\shared\include\PluginManager";"$(VISION_SDK)\shared\include";"$(DXSDK_DIR)\include";"$(VISION_SDK)\ThirdParty";;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName).vPluginD</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\Lib\win32_vs2010_anarchy\debug_dll\$(TargetName).lib</ImportLibrary>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev DLL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP  %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>TESTCOMPONENT_EXPORTS;SAMPLEPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>KaosuProjectPluginPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)KaosuProjectPluginPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_USRDLL;TESTCOMPONENT_EXPORTS;SAMPLEPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>"$(VISION_SDK)\shared\include\vBase";"$(VISION_SDK)\shared\include\Engine";"$(VISION_SDK)\shared\include\PluginManager";"$(VISION_SDK)\shared\include";"$(DXSDK_DIR)\include";"$(VISION_SDK)\ThirdParty";;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName).vPlugin</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\Lib\win32_vs2010_anarchy\dev_dll\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>TESTCOMPONENT_EXPORTS;SAMPLEPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>KaosuProjectPluginPCH.h</PrecompiledHeaderFile>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PrecompiledHeaderOutputFile>$(IntDir)KaosuProjectPluginPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;TESTCOMPONENT_EXPORTS;SAMPLEPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>"$(VISION_SDK)\shared\include\vBase";"$(VISION_SDK)\shared\include\Engine";"$(VISION_SDK)\shared\include\PluginManager";"$(VISION_SDK)\shared\include";"$(DXSDK_DIR)\include";"$(VISION_SDK)\ThirdParty";;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName).vPlugin</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\Lib\win32_vs2010_anarchy\release_dll\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

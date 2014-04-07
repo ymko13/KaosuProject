@@ -1,0 +1,3857 @@
+FILEVERSION = 2.4.0.0;
+PLATFORM = DX9;
+
+RENDER_STATE RSC_0 {
+  trackingmask = 520;
+
+  //------ Blend State Group ------
+  blendenable = 255;
+  alphatestref = 100;
+  srcblend = zero;
+  dstblend = one_minus_src_color;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthwriteenabled = false;
+  depthcomparisonfunc = equal;
+
+  //------ Rasterizer State Group ------
+  rst_flags = 9;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_1 {
+  trackingmask = 3840;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthwriteenabled = false;
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_2 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 512;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+  rst_flags = 9;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_3 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 512;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+  rst_flags = 9;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_4 {
+  rasterizerstylefromsurface = true;
+  trackingmask = 512;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 0;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+  rst_flags = 9;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_5 {
+  blendingFromSurface = true;
+  rasterizerstylefromsurface = true;
+  trackingmask = 512;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+
+  //------ Rasterizer State Group ------
+  rst_flags = 9;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_6 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 15;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  depthwriteenabled = false;
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_7 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 255;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  depthwriteenabled = false;
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_8 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 4095;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  depthwriteenabled = false;
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_9 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 65535;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  depthwriteenabled = false;
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_10 {
+  rasterizerstylefromsurface = true;
+  trackingmask = 512;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 0;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+  rst_flags = 9;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_11 {
+  rasterizerstylefromsurface = true;
+  trackingmask = 512;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 0;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+  rst_flags = 9;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_12 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 15;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_13 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 255;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_14 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 4095;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_15 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 65535;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_16 {
+
+  //------ Blend State Group ------
+  alphatestref = 64;
+  rtwritemask = 0;
+
+  //------ Depth Stencil Group ------
+  depthwriteenabled = false;
+  depthcomparisonfunc = less;
+  stencilcomparisonfunc = always,always;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_17 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 15;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  stenciltestenabled = true;
+  depthcomparisonfunc = always;
+  stencilpassOp = replace,keep;
+  stencilcomparisonfunc = always,greater;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_18 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 255;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  stenciltestenabled = true;
+  depthcomparisonfunc = always;
+  stencilpassOp = replace,keep;
+  stencilcomparisonfunc = always,greater;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_19 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 4095;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  stenciltestenabled = true;
+  depthcomparisonfunc = always;
+  stencilpassOp = replace,keep;
+  stencilcomparisonfunc = always,greater;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_20 {
+  trackingmask = 0;
+
+  //------ Blend State Group ------
+  alphatestref = 100;
+  rtwritemask = 65535;
+  alphatestfunc = less_or_equal;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  stenciltestenabled = true;
+  depthcomparisonfunc = always;
+  stencilpassOp = replace,keep;
+  stencilcomparisonfunc = always,greater;
+
+  //------ Rasterizer State Group ------
+  cullmode = none;
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_21 {
+  renderflags = 1792;
+
+  //------ Blend State Group ------
+  alphatestref = 64;
+  dstblend = zero;
+  dstblendAlpha = zero;
+
+  //------ Depth Stencil Group ------
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_22 {
+  renderflags = 1792;
+
+  //------ Blend State Group ------
+  alphatestref = 64;
+  dstblend = zero;
+  dstblendAlpha = zero;
+
+  //------ Depth Stencil Group ------
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_23 {
+  trackingmask = 0;
+  renderflags = 1792;
+
+  //------ Blend State Group ------
+  alphatestref = 64;
+  dstblend = zero;
+  dstblendAlpha = zero;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  depthwriteenabled = false;
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_24 {
+  renderflags = 1792;
+
+  //------ Blend State Group ------
+  blendenable = 255;
+  alphatestref = 64;
+  dstblend = src_alpha;
+  dstblendAlpha = zero;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  depthwriteenabled = false;
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+RENDER_STATE RSC_25 {
+  renderflags = 1792;
+
+  //------ Blend State Group ------
+  blendenable = 255;
+  alphatestref = 64;
+  dstblendAlpha = zero;
+
+  //------ Depth Stencil Group ------
+  depthtestenabled = false;
+  depthwriteenabled = false;
+  depthcomparisonfunc = always;
+
+  //------ Rasterizer State Group ------
+
+  //------ Tesselation State Group ------
+}
+
+SHADER StaticLightShadows {
+  RenderStateContainerID = 0;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 33;
+  RecompilationRequiredOnPlatforms = -744;
+  supportedplatforms = 743;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = lightmask;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/SkinningVS.inc>
+
+#ifdef _VISION_DX11
+cbuffer g_GlobalConstantBufferObject : register (b1)
+{
+  float4x4 matMVP     : packoffset(c4);   // model view projection matrix
+  float4   LMtoSM     : packoffset(c12);  // lightmap to shadowmap: xy:scale, zw:ofs
+}
+cbuffer g_GlobalConstantBufferFrame : register (b0)
+{
+  float4   LightColor : packoffset(c23);   // This is my constant
+}
+#else
+  float4x4 matMVP     : register(c8);
+  float4   LMtoSM     : register(c28);
+  float4   LightColor : register(c29);
+#endif
+
+struct VS_IN
+{
+  float3   ObjPos     : POSITION;
+  float2   UV0        : TEXCOORD1;
+  
+  SKINNING_VERTEX_STREAMS
+};
+
+struct VS_OUT
+{
+  float4   ProjPos    : SV_Position;
+  float2   UV0        : TEXCOORD0;
+  float4   LightColor : TEXCOORD1;
+};
+
+#ifndef USE_SKINNING
+VS_OUT vs_main( VS_IN In )
+#else
+VS_OUT vs_main_skinning( VS_IN In )
+#endif
+{
+    VS_OUT Out;
+    
+    float4 objPos4 = float4(In.ObjPos, 1.0f);
+    #ifdef USE_SKINNING
+        PREPARE_SKINNING(In.BoneIndices);
+        TRANSFORM_OBJECT_POS(objPos4, In.ObjPos, In.BoneWeight);
+    #endif  
+    
+    Out.ProjPos = mul( matMVP, objPos4 );
+    Out.UV0 = float2(In.UV0.x*LMtoSM.x+LMtoSM.z, In.UV0.y*LMtoSM.y+LMtoSM.w);
+    Out.LightColor = LightColor;
+    return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_function = "vs_main_skinning";
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+#ifdef _VISION_DX11
+  Texture2D <float4> ShadowMap        : register(t0);
+  sampler            ShadowMapSampler : register(s0);
+#else
+  sampler2D          ShadowMap        : register(s0);
+#endif
+
+struct PS_IN      
+{
+  float4 ProjPos    : SV_Position;
+  float2 UV0        : TEXCOORD0;
+  float4 LightColor : TEXCOORD1;
+};
+
+float4 ps_main( PS_IN In ) : SV_Target
+{
+  return vTex2D(ShadowMap, ShadowMapSampler, In.UV0)*In.LightColor;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ProjectedWallmark {
+  RenderStateContainerID = 1;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 1;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 743;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 2;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = custom;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = border,border,border;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  SAMPLER_PS 1 = {
+    samplername = "";
+    texturetype = custom;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = clamp,clamp,clamp;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+#ifdef _VISION_DX11
+cbuffer g_GlobalConstantBufferObject : register (b1)
+{
+  float4x4 matMVP       : packoffset(c4);   // model view projection matrix
+}
+cbuffer g_GlobalConstantBufferUser : register (b2)
+{
+  float4   PrimaryColor : packoffset(c0);
+  float4   RefPlaneS    : packoffset(c1);
+  float4   RefPlaneT    : packoffset(c2);
+  float4   RefPlaneQ    : packoffset(c3);
+  float4   RefPlaneAtt  : packoffset(c4);
+  float4   Offset       : packoffset(c5);
+}
+#else
+  float4x4 matMVP       : register(c8);
+
+  #ifdef _VISION_PS3
+    float4   PrimaryColor : register(c64);
+    float4   RefPlaneS    : register(c65);
+    float4   RefPlaneT    : register(c66);
+    float4   RefPlaneQ    : register(c67);
+    float4   RefPlaneAtt  : register(c68);
+    float4   Offset       : register(c69);
+  #else
+    float4   PrimaryColor;
+    float4   RefPlaneS;
+    float4   RefPlaneT;
+    float4   RefPlaneQ;
+    float4   RefPlaneAtt;
+    float4   Offset;
+  #endif
+#endif
+	
+struct VS_IN
+{
+  float3 ObjPos  : POSITION;
+};
+
+struct VS_OUT
+{
+  float4 ProjPos : SV_Position;
+  float4 UV0     : TEXCOORD0;
+  float2 UV1     : TEXCOORD1;
+  float4 Color   : COLOR;
+};
+
+VS_OUT vs_main( VS_IN In )
+{
+  VS_OUT Out;
+  float4 objpos4 = float4(In.ObjPos, 1.0f);
+  Out.ProjPos = mul( matMVP, objpos4 );
+  Out.Color = PrimaryColor;
+  float distq = dot(objpos4, RefPlaneQ);
+  float dists = dot(objpos4, RefPlaneS);
+  float distt = dot(objpos4, RefPlaneT);
+  Out.UV0.x = Offset.x * distq + dists;
+  Out.UV0.y = Offset.x * distq + distt;
+  Out.UV0.z = 0.f;
+  Out.UV0.w = distq;
+  float att = dot(objpos4, RefPlaneAtt);
+  Out.UV1.x = att + Offset.x;
+  Out.UV1.y = Out.UV1.x;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+#ifdef _VISION_DX11
+  Texture2D <float4> WmarkTex        : register(t0);
+  sampler            WmarkTexSampler : register(s0);
+  Texture2D <float4> AttTex          : register(t1);
+  sampler            AttTexSampler   : register(s1);
+#else
+  sampler2D          WmarkTex        : register(s0);
+  sampler2D          AttTex          : register(s1);
+#endif
+
+struct PS_IN                                 
+{                                            
+  float4 ProjPos : SV_Position;  
+  float4 UV0     : TEXCOORD0;                    
+  float2 UV1     : TEXCOORD1;                    
+  float4 Color   : COLOR;                
+};                                          
+
+float4 ps_main( PS_IN In ) : SV_Target
+{
+  return vTex2Dproj(WmarkTex, WmarkTexSampler, In.UV0)*vTex2D(AttTex, AttTexSampler, In.UV1)*In.Color;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER Fullbright {
+  RenderStateContainerID = 2;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 17;
+  RecompilationRequiredOnPlatforms = -744;
+  supportedplatforms = 743;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/SkinningVS.inc>
+
+#ifdef _VISION_DX11
+cbuffer g_GlobalConstantBufferObject : register (b1)
+{
+  float4x4 matMVP : packoffset(c4);   // model view projection matrix
+}
+#else
+  float4x4 matMVP : register(c8);
+#endif
+
+struct VS_IN
+{
+  float3 ObjPos : POSITION;
+  float2 UV0    : TEXCOORD0;
+  
+  SKINNING_VERTEX_STREAMS
+};
+
+struct VS_OUT
+{
+  float4 ProjPos : SV_Position;
+  float2 UV0     : TEXCOORD0;
+};
+
+#ifndef USE_SKINNING
+VS_OUT vs_main( VS_IN In )
+#else
+VS_OUT vs_main_skinning( VS_IN In )
+#endif
+{
+  VS_OUT Out;
+  
+  float4 objPos4 = float4(In.ObjPos, 1.0f);
+  #ifdef USE_SKINNING
+    PREPARE_SKINNING(In.BoneIndices);
+    TRANSFORM_OBJECT_POS(objPos4, In.ObjPos, In.BoneWeight);
+  #endif  
+    
+  Out.ProjPos = mul( matMVP, objPos4 );
+
+  Out.UV0 = In.UV0;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_function = "vs_main_skinning";
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+#ifdef _VISION_DX11
+  Texture2D <float4> BaseTexture        : register(t0);
+  sampler            BaseTextureSampler : register(s0);
+#else
+  sampler2D          BaseTexture        : register(s0);
+#endif
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float2 UV0     : TEXCOORD0;
+};
+
+float4 ps_main( PS_IN In ) : SV_Target
+{
+  return vTex2D(BaseTexture, BaseTextureSampler, In.UV0);
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER TintColor {
+  RenderStateContainerID = 3;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 17;
+  RecompilationRequiredOnPlatforms = -744;
+  supportedplatforms = 743;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/ShaderHelpers.inc>
+#include <Shaders/SkinningVS.inc>
+#define USE_FOG
+
+#ifdef _VISION_DX11
+cbuffer g_GlobalConstantBufferFrame : register (b0)
+{
+  float4    depthFog        : packoffset(c19);  // linear depth fog parameter: near, far, 1/(far-near)
+}
+cbuffer g_GlobalConstantBufferObject : register (b1)
+{
+  float4x4  matMV   : packoffset(c0);   // model view matrix
+  float4x4 matMVP : packoffset(c4);   // model view projection matrix
+}
+#else
+  float4x4 matMV : register(c0);
+  float4x4 matMVP : register(c8);
+  float4 depthFog : register(c62);  // linear depth fog parameter: near, far, 1/(far-near)
+#endif
+
+struct VS_IN
+{
+  float3 ObjPos  : POSITION;
+  float2 UV0     : TEXCOORD0;
+  
+  SKINNING_VERTEX_STREAMS
+};
+
+struct VS_OUT
+{
+  float4 ProjPos : SV_Position;
+  float2 UV0     : TEXCOORD0;
+  #ifdef USE_FOG
+    float fogCoord : TEXCOORD1;
+  #endif
+};
+
+#ifndef USE_SKINNING
+VS_OUT vs_main( VS_IN In )
+#else
+VS_OUT vs_main_skinning( VS_IN In )
+#endif
+{
+  VS_OUT Out;
+  float4 objPos4 = float4(In.ObjPos, 1.0f);
+  
+  #ifdef USE_SKINNING
+    PREPARE_SKINNING(In.BoneIndices);
+    TRANSFORM_OBJECT_POS(objPos4, In.ObjPos, In.BoneWeight);
+  #endif
+
+  Out.ProjPos = mul( matMVP, objPos4 );
+  Out.UV0 = In.UV0;
+  
+  #ifdef USE_FOG
+	#ifdef USE_MIRROR_CLIP_PLANE
+	  Out.fogCoord = GetFogCoord(depthFog, dot(matMV._m20_m21_m22_m23, objectSpacePos));
+	#else
+	  Out.fogCoord = GetFogCoord(depthFog, Out.ProjPos.z);
+    #endif
+  #endif
+	  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_function = "vs_main_skinning";
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/ShaderHelpers.inc>
+#define USE_FOG
+
+#ifdef _VISION_DX11
+  Texture2D <float4> BaseTexture        : register(t0);
+  sampler            BaseTextureSampler : register(s0);
+
+cbuffer g_GlobalConstantBufferFrame : register (b0)
+{
+  float4    depthFogCol     : packoffset(c20);  // linear depth fog color
+}
+
+cbuffer g_GlobalConstantBufferUser : register (b2)
+{
+  float4             Color              : packoffset(c0);
+}
+#else
+  sampler2D          BaseTexture        : register(s0);
+
+  float4 depthFogCol : register(c1);  // linear depth fog color
+
+  #if defined(_VISION_PS3) || defined(_VISION_PSP2) || defined(_VISION_GLES2) || defined(_VISION_WIIU)
+    float4             Color              : register(c32);
+  #else  
+    float4             Color;
+  #endif
+#endif
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float2 UV0     : TEXCOORD0;
+  #ifdef USE_FOG
+    float fogCoord : TEXCOORD1;
+  #endif
+};
+
+float4 ps_main( PS_IN In ) : SV_Target
+{
+  float4 cBaseTex = vTex2D(BaseTexture, BaseTextureSampler, In.UV0)*Color;
+
+  #ifdef USE_FOG
+    cBaseTex.xyz = GetFogColor(cBaseTex.xyz, depthFogCol.xyz, In.fogCoord);  
+  #endif
+
+  return cBaseTex;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ForegroundFillPass {
+  RenderStateContainerID = 4;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 1;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 743;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/SkinningVS.inc>
+
+#ifdef _VISION_DX11
+cbuffer g_GlobalConstantBufferObject : register (b1)
+{
+  float4x4 matMVP : packoffset(c4);   // model view projection matrix
+}
+#else
+  float4x4 matMVP : register(c8);
+#endif
+
+struct VS_IN
+{
+  float3 ObjPos : POSITION;
+  SKINNING_VERTEX_STREAMS
+  
+  //float2 UV0    : TEXCOORD0;
+};
+
+struct VS_OUT
+{
+  float4 ProjPos : SV_Position;
+  //float2 UV0     : TEXCOORD0;
+};
+
+VS_OUT vs_main( VS_IN In )
+{
+  VS_OUT Out;
+  Out.ProjPos = mul( matMVP, float4(In.ObjPos, 1.0f) );
+  //Out.UV0 = In.UV0;
+  return Out;
+}
+
+#ifdef USE_SKINNING
+VS_OUT vs_main_skinning( VS_IN In )
+{
+  VS_OUT Out;
+
+  float4 ObjSpacePos;
+  SKIN_NO_NORMAL(ObjSpacePos, In.ObjPos, In.BoneIndices, In.BoneWeight);
+  Out.ProjPos = mul(matMVP, ObjSpacePos);
+   return Out;
+}
+#endif
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_function = "vs_main_skinning";
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+/*
+#ifdef _VISION_DX11
+  Texture2D <float4> BaseTexture        : register(t0);
+  sampler            BaseTextureSampler : register(s0);
+#else
+  sampler2D          BaseTexture        : register(s0);
+#endif
+*/
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  //float2 UV0     : TEXCOORD0;
+};
+
+float4 ps_main( PS_IN In ) : SV_Target
+{
+  return float4(1.0f, 1.0f, 1.0f, 1.0f);
+  //return vTex2D(BaseTexture, BaseTextureSampler, In.UV0);
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER TintColorAlphaTest {
+  RenderStateContainerID = 5;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 17;
+  RecompilationRequiredOnPlatforms = -744;
+  supportedplatforms = 743;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/ShaderHelpers.inc>
+#include <Shaders/SkinningVS.inc>
+#define USE_FOG
+
+#ifdef _VISION_DX11
+cbuffer g_GlobalConstantBufferFrame : register (b0)
+{
+  float4    depthFog        : packoffset(c19);  // linear depth fog parameter: near, far, 1/(far-near)
+}
+
+cbuffer g_GlobalConstantBufferObject : register (b1)
+{
+  float4x4  matMV   : packoffset(c0);   // model view matrix
+  float4x4 matMVP : packoffset(c4);   // model view projection matrix
+}
+#else
+  float4x4 matMV : register(c0);
+  float4x4 matMVP : register(c8);
+  float4 depthFog : register(c62);  // linear depth fog parameter: near, far, 1/(far-near)
+#endif
+
+struct VS_IN
+{
+  float3 ObjPos  : POSITION;
+  float2 UV0     : TEXCOORD0;
+  
+  SKINNING_VERTEX_STREAMS
+};
+
+struct VS_OUT
+{
+  float4 ProjPos : SV_Position;
+  float2 UV0     : TEXCOORD0;
+  #ifdef USE_FOG
+    float fogCoord : TEXCOORD1;
+  #endif
+};
+
+#ifndef USE_SKINNING
+VS_OUT vs_main( VS_IN In )
+#else
+VS_OUT vs_main_skinning( VS_IN In )
+#endif
+{
+  VS_OUT Out;
+  
+  float4 objPos4 = float4(In.ObjPos, 1.0f);
+  #ifdef USE_SKINNING
+    PREPARE_SKINNING(In.BoneIndices);
+    TRANSFORM_OBJECT_POS(objPos4, In.ObjPos, In.BoneWeight);
+  #endif  
+    
+  Out.ProjPos = mul( matMVP, objPos4 );
+  Out.UV0 = In.UV0;
+  
+  #ifdef USE_FOG
+	#ifdef USE_MIRROR_CLIP_PLANE
+	  Out.fogCoord = GetFogCoord(depthFog, dot(matMV._m20_m21_m22_m23, objectSpacePos));
+	#else
+	  Out.fogCoord = GetFogCoord(depthFog, Out.ProjPos.z);
+    #endif
+  #endif
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_function = "vs_main_skinning";
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/ShaderHelpers.inc>
+#define USE_FOG
+
+#ifdef _VISION_DX11
+  Texture2D <float4> BaseTexture        : register(t0);
+  sampler            BaseTextureSampler : register(s0);
+
+cbuffer g_GlobalConstantBufferFrame : register (b0)
+{
+  float4    depthFogCol     : packoffset(c20);  // linear depth fog color
+}
+
+cbuffer g_GlobalConstantBufferUser : register (b2)
+{
+  float4             Color              : packoffset(c0);
+  float			     AlphaThreshold     : packoffset(c1);
+}
+#else
+  sampler2D          BaseTexture        : register(s0);
+
+  float4 depthFogCol : register(c1);  // linear depth fog color
+
+  #if defined(_VISION_PS3) || defined(_VISION_PSP2) || defined(_VISION_GLES2) || defined(_VISION_WIIU)
+    float4             Color              : register(c32);
+    float			   AlphaThreshold     : register(c33);
+  #else  
+    float4             Color;
+    float			   AlphaThreshold;
+  #endif
+#endif
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float2 UV0     : TEXCOORD0;
+  #ifdef USE_FOG
+    float fogCoord : TEXCOORD1;
+  #endif
+};
+
+float4 ps_main( PS_IN In ) : SV_Target
+{
+  float4 cColor = vTex2D(BaseTexture, BaseTextureSampler, In.UV0);
+  clip (cColor.a - AlphaThreshold);
+
+  #ifdef USE_FOG
+    cColor.xyz = GetFogColor(cColor.xyz, depthFogCol.xyz, In.fogCoord);  
+  #endif
+
+  return cColor;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreen1 {
+  RenderStateContainerID = 6;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -744;
+  supportedplatforms = 743;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  #ifdef _VISION_PSP2
+  Out.ProjPos = float4(In.ObjPos, 1.0f, 1.0f);
+  #else
+  Out.ProjPos = float4(In.ObjPos, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  #endif
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+float4 ps_main( PS_IN In ) : SV_Target
+{
+  return In.Color;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreen2 {
+  RenderStateContainerID = 7;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -552;
+  supportedplatforms = 551;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  Out.ProjPos = float4(In.ObjPos.xy, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+struct PS_OUT
+{
+  float4 Color0 : SV_Target0;
+  float4 Color1 : SV_Target1;
+
+};
+
+PS_OUT ps_main( PS_IN In )
+{
+  PS_OUT Out;
+  Out.Color0 = In.Color;
+  Out.Color1 = In.Color;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreen3 {
+  RenderStateContainerID = 8;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -552;
+  supportedplatforms = 551;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  Out.ProjPos = float4(In.ObjPos.xy, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+struct PS_OUT
+{
+  float4 Color0 : SV_Target0;
+  float4 Color1 : SV_Target1;
+  float4 Color2 : SV_Target2;
+};
+
+PS_OUT ps_main( PS_IN In )
+{
+  PS_OUT Out;
+  Out.Color0 = In.Color;
+  Out.Color1 = In.Color;
+  Out.Color2 = In.Color;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreen4 {
+  RenderStateContainerID = 9;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -552;
+  supportedplatforms = 551;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  Out.ProjPos = float4(In.ObjPos.xy, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+struct PS_OUT
+{
+  float4 Color0 : SV_Target0;
+  float4 Color1 : SV_Target1;
+  float4 Color2 : SV_Target2;
+  float4 Color3 : SV_Target3;
+};
+
+PS_OUT ps_main( PS_IN In )
+{
+  PS_OUT Out;
+  Out.Color0 = In.Color;
+  Out.Color1 = In.Color;
+  Out.Color2 = In.Color;
+  Out.Color3 = In.Color;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ForegroundMaskPass {
+  RenderStateContainerID = 10;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 1;
+  RecompilationRequiredOnPlatforms = -744;
+  supportedplatforms = 743;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/SkinningVS.inc>
+
+#ifdef _VISION_DX11
+cbuffer g_GlobalConstantBufferObject : register (b1)
+{
+  float4x4 matMVP : packoffset(c4);   // model view projection matrix
+}
+#else
+  float4x4 matMVP : register(c8);
+#endif
+
+struct VS_IN
+{
+  float3 ObjPos : POSITION;
+  //float2 UV0    : TEXCOORD0;
+  
+  SKINNING_VERTEX_STREAMS
+};
+
+struct VS_OUT
+{
+  float4 ProjPos : SV_Position;
+  //float2 UV0     : TEXCOORD0;
+};
+
+#ifndef USE_SKINNING
+VS_OUT vs_main( VS_IN In )
+#else
+VS_OUT vs_main_skinning( VS_IN In )
+#endif
+{
+  VS_OUT Out;
+  
+  float4 objPos4 = float4(In.ObjPos, 1.0f);
+  #ifdef USE_SKINNING
+    PREPARE_SKINNING(In.BoneIndices);
+    TRANSFORM_OBJECT_POS(objPos4, In.ObjPos, In.BoneWeight);
+  #endif  
+    
+  Out.ProjPos = mul( matMVP, objPos4 );
+  Out.ProjPos.z = 0.0f;
+  
+  //Out.UV0 = In.UV0;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_function = "vs_main_skinning";
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+/*
+#ifdef _VISION_DX11
+  Texture2D <float4> BaseTexture        : register(t0);
+  sampler            BaseTextureSampler : register(s0);
+#else
+  sampler2D          BaseTexture        : register(s0);
+#endif
+*/
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  //float2 UV0     : TEXCOORD0;
+};
+
+float4 ps_main( PS_IN In ) : SV_Target
+{
+  return float4(1.0f, 1.0f, 1.0f, 1.0f);
+  //return vTex2D(BaseTexture, BaseTextureSampler, In.UV0);
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ForegroundFillPassMRT {
+  RenderStateContainerID = 11;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 1;
+  RecompilationRequiredOnPlatforms = -552;
+  supportedplatforms = 551;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = base_texture;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = default;
+    textureaddressmode = wrap,wrap,wrap;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 1024.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/SkinningVS.inc>
+
+#ifdef _VISION_DX11
+cbuffer g_GlobalConstantBufferObject : register (b1)
+{
+  float4x4 matMVP : packoffset(c4);   // model view projection matrix
+}
+#else
+  float4x4 matMVP : register(c8);
+#endif
+
+struct VS_IN
+{
+  float3 ObjPos : POSITION;
+  //float2 UV0    : TEXCOORD0;
+  
+  SKINNING_VERTEX_STREAMS
+};
+
+struct VS_OUT
+{
+  float4 ProjPos : SV_Position;
+  //float2 UV0     : TEXCOORD0;
+};
+
+#ifndef USE_SKINNING
+VS_OUT vs_main( VS_IN In )
+#else
+VS_OUT vs_main_skinning( VS_IN In )
+#endif
+{
+  VS_OUT Out;
+  
+  float4 objPos4 = float4(In.ObjPos, 1.0f);
+  #ifdef USE_SKINNING
+    PREPARE_SKINNING(In.BoneIndices);
+    TRANSFORM_OBJECT_POS(objPos4, In.ObjPos, In.BoneWeight);
+  #endif  
+    
+  Out.ProjPos = mul( matMVP, objPos4 );
+  //Out.UV0 = In.UV0;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_function = "vs_main_skinning";
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+/*
+#ifdef _VISION_DX11
+  Texture2D <float4> BaseTexture        : register(t0);
+  sampler            BaseTextureSampler : register(s0);
+#else
+  sampler2D          BaseTexture        : register(s0);
+#endif
+*/
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  //float2 UV0     : TEXCOORD0;
+};
+
+struct PS_OUT
+{
+  float4 Color0 : SV_Target0;
+  float4 Color1 : SV_Target1;
+  float4 Color2 : SV_Target2;
+  float4 Color3 : SV_Target3;
+};
+
+PS_OUT ps_main( PS_IN In ) : SV_Target
+{
+  PS_OUT Out;
+  Out.Color0 = float4(1.0f, 1.0f, 1.0f, 1.0f);
+  Out.Color1 = float4(1.0f, 1.0f, 1.0f, 1.0f);
+  Out.Color2 = float4(1.0f, 1.0f, 1.0f, 1.0f);
+  Out.Color3 = float4(1.0f, 1.0f, 1.0f, 1.0f);
+  return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreenDepth1 {
+  RenderStateContainerID = 12;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -744;
+  supportedplatforms = 743;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  #ifdef _VISION_PSP2
+  Out.ProjPos = float4(In.ObjPos, 1.0f, 1.0f);
+  #else
+  Out.ProjPos = float4(In.ObjPos, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  #endif
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+float4 ps_main( PS_IN In ) : SV_Target
+{
+  return In.Color;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreenDepth2 {
+  RenderStateContainerID = 13;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -552;
+  supportedplatforms = 551;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  Out.ProjPos = float4(In.ObjPos.xy, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+struct PS_OUT
+{
+  float4 Color0 : SV_Target0;
+  float4 Color1 : SV_Target1;
+
+};
+
+PS_OUT ps_main( PS_IN In )
+{
+  PS_OUT Out;
+  Out.Color0 = In.Color;
+  Out.Color1 = In.Color;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreenDepth3 {
+  RenderStateContainerID = 14;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -552;
+  supportedplatforms = 551;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  Out.ProjPos = float4(In.ObjPos.xy, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+struct PS_OUT
+{
+  float4 Color0 : SV_Target0;
+  float4 Color1 : SV_Target1;
+  float4 Color2 : SV_Target2;
+};
+
+PS_OUT ps_main( PS_IN In )
+{
+  PS_OUT Out;
+  Out.Color0 = In.Color;
+  Out.Color1 = In.Color;
+  Out.Color2 = In.Color;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreenDepth4 {
+  RenderStateContainerID = 15;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -552;
+  supportedplatforms = 551;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  Out.ProjPos = float4(In.ObjPos.xy, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+struct PS_OUT
+{
+  float4 Color0 : SV_Target0;
+  float4 Color1 : SV_Target1;
+  float4 Color2 : SV_Target2;
+  float4 Color3 : SV_Target3;
+};
+
+PS_OUT ps_main( PS_IN In )
+{
+  PS_OUT Out;
+  Out.Color0 = In.Color;
+  Out.Color1 = In.Color;
+  Out.Color2 = In.Color;
+  Out.Color3 = In.Color;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER PS3ZCullReload {
+  RenderStateContainerID = 16;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 1;
+  RecompilationRequiredOnPlatforms = -5;
+  supportedplatforms = 4;
+
+  description=$SOURCECODETAG{
+ZCull Reload Shader for Playstation 3
+  }$SOURCECODETAG
+
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/SkinningVS.inc>
+
+#ifdef _VISION_DX11
+cbuffer g_GlobalConstantBufferObject : register (b1)
+{
+  float4x4 matMVP  : packoffset(c4); // model view projection matrix
+}
+#else
+  float4x4 matMVP  : register(c8);
+#endif
+
+struct VS_IN                                   
+{                                             
+  float3   ObjPos  : POSITION; // Object space position 
+  
+  SKINNING_VERTEX_STREAMS
+};                                           
+                                              
+struct VS_OUT                                 
+{                                             
+  float4   ProjPos : SV_Position; // Projected space position 
+};                                             
+                                               
+#ifndef USE_SKINNING
+VS_OUT vs_main( VS_IN In )
+#else
+VS_OUT vs_main_skinning( VS_IN In )
+#endif                     
+{                                            
+  VS_OUT Out; 
+  
+  float4 objPos4 = float4(In.ObjPos, 1.0f);
+  #ifdef USE_SKINNING
+    PREPARE_SKINNING(In.BoneIndices);
+    TRANSFORM_OBJECT_POS(objPos4, In.ObjPos, In.BoneWeight);
+  #endif  
+    
+  Out.ProjPos = mul( matMVP, objPos4 );        
+  return Out;                              
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0;
+  svs_function = "vs_main_skinning";
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN                                 
+{                                             
+  float4   ProjPos : SV_Position;
+};                                             
+
+struct PS_OUT
+{
+  float4   Color : SV_Target;
+  float    Depth : DEPTH;
+};
+
+
+PS_OUT ps_main( PS_IN In ) : SV_Target
+{
+  PS_OUT Out;
+  Out.Color = float4(1.f,1.f,1.f,1.f); 
+  Out.Depth = 1.0f;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_5_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreenDepthStencil1 {
+  RenderStateContainerID = 17;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -744;
+  supportedplatforms = 743;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  #ifdef _VISION_PSP2
+  Out.ProjPos = float4(In.ObjPos, 1.0f, 1.0f);
+  #else
+  Out.ProjPos = float4(In.ObjPos, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  #endif
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+float4 ps_main( PS_IN In ) : SV_Target
+{
+  return In.Color;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreenDepthStencil2 {
+  RenderStateContainerID = 18;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -552;
+  supportedplatforms = 551;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  Out.ProjPos = float4(In.ObjPos.xy, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+struct PS_OUT
+{
+  float4 Color0 : SV_Target0;
+  float4 Color1 : SV_Target1;
+
+};
+
+PS_OUT ps_main( PS_IN In )
+{
+  PS_OUT Out;
+  Out.Color0 = In.Color;
+  Out.Color1 = In.Color;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreenDepthStencil3 {
+  RenderStateContainerID = 19;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -552;
+  supportedplatforms = 551;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  Out.ProjPos = float4(In.ObjPos.xy, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+struct PS_OUT
+{
+  float4 Color0 : SV_Target0;
+  float4 Color1 : SV_Target1;
+  float4 Color2 : SV_Target2;
+};
+
+PS_OUT ps_main( PS_IN In )
+{
+  PS_OUT Out;
+  Out.Color0 = In.Color;
+  Out.Color1 = In.Color;
+  Out.Color2 = In.Color;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER ClearScreenDepthStencil4 {
+  RenderStateContainerID = 20;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 5;
+  RecompilationRequiredOnPlatforms = -552;
+  supportedplatforms = 551;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 0;
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct VS_IN                   
+{                              
+  float2 ObjPos : POSITION;  
+  float4 Color : COLOR;
+};                                           
+
+struct VS_OUT                                 
+{                                             
+  float4 ProjPos  : SV_Position;              
+  float4 Color : COLOR;
+};
+
+
+VS_OUT vs_main( VS_IN In )
+{                                              
+  VS_OUT Out;                                
+  
+  Out.ProjPos = float4(In.ObjPos.xy, 0.0f, 1.0f);
+  Out.ProjPos.y *= -1.0f;
+  Out.Color = In.Color;
+  
+  return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_1;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_1;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+
+struct PS_IN
+{
+  float4 ProjPos : SV_Position;
+  float4 Color   : COLOR;
+};
+
+struct PS_OUT
+{
+  float4 Color0 : SV_Target0;
+  float4 Color1 : SV_Target1;
+  float4 Color2 : SV_Target2;
+  float4 Color3 : SV_Target3;
+};
+
+PS_OUT ps_main( PS_IN In )
+{
+  PS_OUT Out;
+  Out.Color0 = In.Color;
+  Out.Color1 = In.Color;
+  Out.Color2 = In.Color;
+  Out.Color3 = In.Color;
+  return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_1;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_4_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER CopyWithDepthOutput {
+  RenderStateContainerID = 21;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 17;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 518;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 3;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = custom;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = min_mag_mip_point;
+    textureaddressmode = clamp,clamp,clamp;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  SAMPLER_PS 1 = {
+    samplername = "";
+    texturetype = custom;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = min_mag_mip_point;
+    textureaddressmode = clamp,clamp,clamp;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  SAMPLER_PS 2 = {
+    samplername = "";
+    texturetype = custom;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = min_mag_mip_point;
+    textureaddressmode = clamp,clamp,clamp;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+struct VS_IN
+{
+   float2 ObjPos   : POSITION;
+   float2 UV : TEXCOORD0;
+};
+
+struct VS_OUT
+{
+   float4 ProjPos  : POSITION;
+   float2 UV : TEXCOORD0;
+};
+
+VS_OUT vs_main( VS_IN In )
+{
+   VS_OUT Out;
+   Out.ProjPos = float4(In.ObjPos, 0.0f, 1.0f);
+   //Out.ProjPos.y *= -1.0f;
+   Out.UV = In.UV;
+   return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/DeferredShadingHelpers.inc>
+
+sampler2D ColorTexture : register(s0);
+sampler2D DepthTexture : register(s1);
+
+struct PS_IN
+{
+    float4 ProjPos : POSITION;
+    float2 UV : TEXCOORD0;
+};
+
+struct PS_OUT_CD
+{
+    float4 Color : COLOR0;
+    float  Depth : DEPTH0;
+};
+
+#define DummySampler 
+
+PS_OUT_CD ps_main( PS_IN In )
+{
+    PS_OUT_CD Out;
+    Out.Color = tex2D( ColorTexture, In.UV );
+    Out.Depth = READ_FROM_D24( DepthTexture, In.UV );
+    return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_5_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER CopyDepthOnly {
+  RenderStateContainerID = 22;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 17;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 518;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = custom;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = min_mag_mip_point;
+    textureaddressmode = clamp,clamp,clamp;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+struct VS_IN
+{
+   float2 ObjPos   : POSITION;
+   float2 UV : TEXCOORD0;
+};
+
+struct VS_OUT
+{
+   float4 ProjPos  : POSITION;
+   float2 UV : TEXCOORD0;
+};
+
+VS_OUT vs_main( VS_IN In )
+{
+   VS_OUT Out;
+   Out.ProjPos = float4(In.ObjPos, 0.0f, 1.0f);
+   //Out.ProjPos.y *= -1.0f;
+   Out.UV = In.UV;
+   return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/DeferredShadingHelpers.inc>
+
+sampler2D DepthTexture : register(s0);
+
+struct PS_IN
+{
+    float4 ProjPos : POSITION;
+    float2 UV : TEXCOORD0;
+};
+
+struct PS_OUT_CD
+{
+    float4 Color : COLOR0;
+    float  Depth : DEPTH0;
+};
+
+PS_OUT_CD ps_main( PS_IN In )
+{
+    PS_OUT_CD Out;
+    
+    #ifdef _VISION_PS3
+      // Reconstruct depth from ARGB Texture
+      float4 fullDepth = tex2D( DepthTexture, In.UV ) * 255.f;
+      Out.Depth=fullDepth.a/256.f + fullDepth.r/65536.f + fullDepth.g/16777216.f;
+    #else
+      Out.Depth = READ_FROM_D24( DepthTexture, In.UV );
+    #endif
+    
+    Out.Color = float4(0.0f, 0.0f, 0.0f, 1.0f);
+    return Out;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_5_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER CopyDepthOnly_360 {
+  RenderStateContainerID = 23;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 1;
+  RecompilationRequiredOnPlatforms = 0;
+  supportedplatforms = 2;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = custom;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = min_mag_mip_point;
+    textureaddressmode = clamp,clamp,clamp;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+struct VS_IN
+{
+   float2 ObjPos   : POSITION;
+};
+
+struct VS_OUT
+{
+   float4 ProjPos  : POSITION;
+};
+
+VS_OUT vs_main( VS_IN In )
+{
+   VS_OUT Out;
+   Out.ProjPos = float4(In.ObjPos, 0.0f, 1.0f);
+   return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+#include <Shaders/VisionCommon.inc>
+#include <Shaders/DeferredShadingHelpers.inc>
+
+sampler2D DepthTexture : register(s0);
+
+#define EDRAM_TILE_WIDTH 80.0f
+
+float4 ps_main( float2 ScreenPos : VPOS ) : COLOR0
+{
+    float ColumnIndex = ScreenPos.x / EDRAM_TILE_WIDTH;
+    float HalfColumn = frac( ColumnIndex );
+    float2 TexCoord = ScreenPos;
+    if( HalfColumn >= 0.5 )
+        TexCoord.x -= ( EDRAM_TILE_WIDTH / 2 );
+    else
+        TexCoord.x += ( EDRAM_TILE_WIDTH / 2 );
+
+    float4 DepthData;
+    asm
+    {
+        tfetch2D DepthData,
+                 TexCoord,
+                 DepthTexture,
+                 UnnormalizedTextureCoords = true,
+                 MagFilter = point,
+                 MinFilter = point
+    };
+    
+    return DepthData.zyxw;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_5_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER CopyTranslucenciesAlpha {
+  RenderStateContainerID = 24;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 17;
+  RecompilationRequiredOnPlatforms = -519;
+  supportedplatforms = 518;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = custom;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = min_mag_linear_mip_point;
+    textureaddressmode = clamp,clamp,clamp;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+struct VS_IN
+{
+   float2 ObjPos   : POSITION;
+   float2 UV : TEXCOORD0;
+};
+
+struct VS_OUT
+{
+   float4 ProjPos  : POSITION;
+   float2 UV : TEXCOORD0;
+};
+
+VS_OUT vs_main( VS_IN In )
+{
+   VS_OUT Out;
+   Out.ProjPos = float4(In.ObjPos, 0.0f, 1.0f);
+   //Out.ProjPos.y *= -1.0f;
+   Out.UV = In.UV;
+   return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_3;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_3;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+sampler2D ColorTexture : register(s0);
+
+struct PS_IN
+{
+    float4 ProjPos : POSITION;
+    float2 UV : TEXCOORD0;
+};
+
+
+float4 ps_main( PS_IN In ) : COLOR0
+{
+  float4 vColor = tex2D( ColorTexture, In.UV );
+  return vColor;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_3;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_5_0;
+
+  //------ platform specific bytecode ------
+}
+
+SHADER CopyTranslucenciesAdditive {
+  RenderStateContainerID = 25;
+  IsAutoGenerated = false;
+  UsesPermutationVariables = false;
+  streammask = 17;
+  RecompilationRequiredOnPlatforms = -519;
+  supportedplatforms = 518;
+  compileflags = 0;
+  hs_controlpoints = 3;
+
+  //------ Texture samplers ------
+  numsamplers_vs = 0;
+  numsamplers_hs = 0;
+  numsamplers_ds = 0;
+  numsamplers_gs = 0;
+  numsamplers_ps = 1;
+  SAMPLER_PS 0 = {
+    samplername = "";
+    texturetype = custom;
+    textureindex = 0;
+    texturefile = "";
+    filtermode = min_mag_linear_mip_point;
+    textureaddressmode = clamp,clamp,clamp;
+    m_fLodBias = 0.000000;
+    m_iMaxAnisotropy = 1;
+    comparisonfunc = less;
+    bordercolor = 0.000000,0.000000,0.000000,1.000000;
+    minlod = 0.000000;
+    maxlod = 0.000000;
+  }
+  numsamplers_cs = 0;
+
+  //------ vertex shader source ------
+
+  vs_sourcecode=$SOURCECODETAG{
+//
+struct VS_IN
+{
+   float2 ObjPos   : POSITION;
+   float2 UV : TEXCOORD0;
+};
+
+struct VS_OUT
+{
+   float4 ProjPos  : POSITION;
+   float2 UV : TEXCOORD0;
+};
+
+VS_OUT vs_main( VS_IN In )
+{
+   VS_OUT Out;
+   Out.ProjPos = float4(In.ObjPos, 0.0f, 1.0f);
+   //Out.ProjPos.y *= -1.0f;
+   Out.UV = In.UV;
+   return Out;
+}
+  }$SOURCECODETAG
+
+  vs_function = "vs_main";
+  vs_mintarget = vs_2_0;
+  vs_mintargetDX11 = vs_4_0_level_9_3;
+  svs_mintarget = vs_2_0;
+  svs_mintargetDX11 = vs_4_0_level_9_3;
+
+  //------ hull shader source ------
+  hs_mintarget = hs_5_0;
+
+  //------ domain shader source ------
+  ds_mintarget = ds_5_0;
+
+  //------ geometry shader source ------
+  gs_mintarget = gs_4_0;
+  gs_mintargetDX11 = gs_4_0;
+
+  //------ pixel shader source ------
+
+  ps_sourcecode=$SOURCECODETAG{
+//
+sampler2D ColorTexture : register(s0);
+
+struct PS_IN
+{
+    float4 ProjPos : POSITION;
+    float2 UV : TEXCOORD0;
+};
+
+
+float4 ps_main( PS_IN In ) : COLOR0
+{
+  float4 vColor = tex2D( ColorTexture, In.UV );
+  return vColor;
+}
+  }$SOURCECODETAG
+
+  ps_function = "ps_main";
+  ps_mintarget = ps_2_0;
+  ps_mintargetDX11 = ps_4_0_level_9_3;
+
+  //------ compute shader source ------
+  cs_mintarget = cs_5_0;
+
+  //------ platform specific bytecode ------
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+EFFECT BS_StaticLightShadows {
+  DESCRIPTION = {};
+  PARAMCOMMENT={"LightColor","","255,255,255,255",float4,none,""};
+  TECHNIQUE "default_sm11"
+  {
+    passes="StaticLightShadows";
+    passtype = TransparentPass;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT BS_Fullbright {
+  DESCRIPTION = {"Full bright shader for non lit geometry"};
+  TECHNIQUE "sm11"
+  {
+    passes="Fullbright";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT BS_TintColor {
+  DESCRIPTION = {};
+  PARAMCOMMENT={"Color","Color to tint the base texture","1,1,1,1",float4,color,""};
+  TECHNIQUE "sm11"
+  {
+    passes="TintColor";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT BS_ForeGroundFill {
+  DESCRIPTION = {};
+  TECHNIQUE "sm11"
+  {
+    passes="ForegroundFillPass";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT BS_TintColorAlphaTest {
+  DESCRIPTION = {};
+  PARAMCOMMENT={"AlphaThreshold","","0.01",float,none,""};
+  PARAMCOMMENT={"Color","","1,1,1,1",float4,color,""};
+  TECHNIQUE "new_technique"
+  {
+    passes="TintColorAlphaTest";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT BS_ClearScreen {
+  DESCRIPTION = {};
+  TECHNIQUE "RT1"
+  {
+    inclusionTags="1";
+    passes="ClearScreen1","ClearScreenDepth1","ClearScreenDepthStencil1";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "RT2"
+  {
+    inclusionTags="2";
+    passes="ClearScreen2","ClearScreenDepth2","ClearScreenDepthStencil2";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "RT3"
+  {
+    inclusionTags="3";
+    passes="ClearScreen3","ClearScreenDepth3","ClearScreenDepthStencil3";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+  TECHNIQUE "RT4"
+  {
+    inclusionTags="4";
+    passes="ClearScreen4","ClearScreenDepth4","ClearScreenDepthStencil4";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT BS_ForeGroundMask {
+  DESCRIPTION = {};
+  TECHNIQUE "new_technique"
+  {
+    passes="ForegroundMaskPass";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT BS_ForeGroundFillMRT4 {
+  DESCRIPTION = {};
+  TECHNIQUE "new_technique"
+  {
+    passes="ForegroundFillPassMRT";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT BS_PS3ZCullReload {
+  DESCRIPTION = {};
+  TECHNIQUE "new_technique"
+  {
+    passes="PS3ZCullReload";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT CopyWithDepthOutput {
+  DESCRIPTION = {};
+  TECHNIQUE "copy"
+  {
+    passes="CopyWithDepthOutput";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT CopyDepthOnly {
+  DESCRIPTION = {};
+  TECHNIQUE "copy"
+  {
+    passes="CopyDepthOnly";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT CopyDepthOnly_360 {
+  DESCRIPTION = {};
+  TECHNIQUE "copy"
+  {
+    passes="CopyDepthOnly_360";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT CopyTranslucenciesAlpha {
+  DESCRIPTION = {};
+  TECHNIQUE "copy"
+  {
+    passes="CopyTranslucenciesAlpha";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+
+EFFECT CopyTranslucenciesAdditive {
+  DESCRIPTION = {};
+  TECHNIQUE "copy"
+  {
+    passes="CopyTranslucenciesAdditive";
+    passtype = Auto;
+    IsPermutationTechnique=false;
+    IsAutoGenerated=false;
+  }
+}
+

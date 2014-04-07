@@ -1,0 +1,73 @@
+[
+	{
+		"_comment" : "General replacements for invalid constructs - can't automatically expand with whitespace due to replacements ending with 'vec'.",
+		"allow_expansion_with_whitespace" : false,
+		"replacements" : {
+			"= highp vec" : "=       vec",
+			"= mediump vec" : "=         vec",
+			"= lowp vec" : "=      vec",
+			"highp vec4(" : "      vec4(",
+			"highp vec3(" : "      vec3(",
+			"highp vec2(" : "      vec2(",
+			"mediump vec4(" : "        vec4(",
+			"mediump vec3(" : "        vec3(",
+			"mediump vec2(" : "        vec2(",
+			"return highp" : "return      ",
+			"return mediump" : "return        "
+		}
+	},
+	{
+		"_comment" : "General replacements - don't specify mediump for samplers.",
+		"replacements" : {
+			"precision mediump sampler2D;" : "",
+			"precision mediump samplerCube;" : ""
+		}
+	},
+	{
+		"_comment" : "General replacements for vertex shaders - we don't want mediump in the vertex shader as the range is too small.",
+		"shader_type" : "vertex",
+		"replacements" : {
+			"precision mediump float;" : "precision highp float;",
+			"mediump" : "highp"
+		}
+	},
+	{
+		"_comment" : "Replacements for everything *but* Adreno.",
+		"allow_expansion_with_whitespace" : false,
+		"preclusions" : [
+			{ "renderer" : "Adreno" }
+		],
+		"replacements" : {
+			", highp vec" : ",       vec",
+			", mediump vec" : ",         vec",
+			", lowp vec" : ",      vec"
+		}
+	},
+	{
+		"_comment" : "Replacements for everything *but* Adreno and PowerVR.",
+		"preclusions" : [
+			{ "renderer" : "Adreno" },
+			{ "renderer" : "PowerVR" }
+		],
+		"replacements" : {
+			"varying highp" : "varying",
+			"uniform highp" : "uniform",
+			"inout highp" : "inout",
+			"in highp" : "in",
+			"in lowp" : "in",
+			"in mediump" : "in",
+			"out highp" : "out"
+		}
+	},
+	{
+		"_comment" : "Replacements for fragment shaders on Mali604 and Adreno320.",
+		"shader_type" : "fragment",
+		"conditions" : [
+			{ "renderer" : "Mali", "renderer1" : "604" },
+			{ "renderer" : "Adreno", "renderer1" : "320" }
+		],
+		"replacements" : {
+			"mediump" : "highp"
+		}
+	}
+]

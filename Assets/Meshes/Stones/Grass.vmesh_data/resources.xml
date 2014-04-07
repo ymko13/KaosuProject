@@ -1,0 +1,8 @@
+<root>
+    <Resources Version="1" Count="4" PathType="Project">
+        <Resource Manager="FILE" Filename="Meshes/Stones/Grass.vmesh_data\materials.xml" OwnerRes="3" Size="483" />
+        <Resource Manager="Textures" Filename="Meshes\Stones\Textures\Simple_Grass_3D.png" CustomInt="1,64" Size="87380" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3540544" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Meshes/Stones/Grass.vmesh" CustomInt="1,1" Size="56" />
+    </Resources>
+</root>
